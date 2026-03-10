@@ -5,11 +5,11 @@
 int q[MAX];
 int front = -1, rear = -1;
 
-int isEmpty(void) {
+int isEmpty() {
     return (front == -1);
 }
 
-int isFull(void) {
+int isFull() {
     return (rear == MAX - 1);
 }
 
@@ -26,7 +26,7 @@ void enqueue(int x) {
     printf("Enqueued: %d\n", x);
 }
 
-void dequeue(void) {
+void dequeue() {
     if (isEmpty()) {
         printf("Queue is EMPTY\n");
         return;
@@ -39,7 +39,7 @@ void dequeue(void) {
     }
 }
 
-void peek(void) {
+void peek() {
     if (isEmpty()) {
         printf("Queue is EMPTY\n");
         return;
@@ -47,7 +47,7 @@ void peek(void) {
     printf("Front: %d\n", q[front]);
 }
 
-int main(void) {
+int main() {
     int choice, x;
 
     while (1) {
